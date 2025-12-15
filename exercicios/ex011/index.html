@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html 5</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>
+        tente abrir esse site em varios dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel"> <!--ordem de sources de baixo a imagem principal e a de cima a mais secundaria (sempre que adicionar mais alguma deixar ela em cima)-->
+    </picture>
+
+    <h1>reproduzindo audio</h1>
+    <p>aprendendo a reproduzir audio</p>
+     <audio preload="metadata" autoplay controls loop>
+        <source src="midia/WhatsApp Ptt 2025-11-22 at 16.39.53.ogg" type="audio/ogg">
+        <!--formatos de audio: MP3 WAV OGG-->
+        <p>infelizmente não foi possivel de utilizar o arquivo
+        <a href="midia/WhatsApp Ptt 2025-11-22 at 16.39.53.ogg">Clique aqui para baixar o arquivo mp3</a>
+        </p>   
+     </audio> 
+
+     <h1> videos</h1>
+     <!--formatos de video: mp4 webm mkv e ogv-->
+</body>
+</html>

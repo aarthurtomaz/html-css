@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes em CSS</title>
+    <style>
+        body {
+            font-family: arial, helvetica, sans-serif;
+            /*
+            medidas absolutas
+            cm(centimetro), m(milimetro), in(polegada), 
+            px(pixel),pt(ponto),pc(pica)
+
+            medidas relativas
+            em(relativo a letra m maiusculo da fonte), ex(tamanho atual da fonte), rem, vw(largura do tamanho da tela) %
+
+            16px geralmente= 1em
+            */
+            font-size: 1em ; /*geralmente é o tamanho normal do site*/
+   }
+   h1 {
+            /*/'font-(weigth/width/width)' weigth=peso width=largura width=altura*/
+
+            /*shorthand font:- font-style -> font-weight -> font-size -> font-family            
+            font-family: 'work sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/  
+
+            font: italic bolder 1em, 'work sans', sans-serif;
+}
+    h2{
+        font: bold, 2em, work sans;
+    }
+     
+
+    </style>
+</head>
+<body>
+    <h1>trabalhando com fontes</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas perspiciatis minus cupiditate facilis recusandae, non, dolor blanditiis corrupti veniam cum laudantium mollitia hic aliquid quo ducimus ipsa quaerat aliquam. Asperiores?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae facilis natus et ducimus corporis! Reiciendis voluptas non, temporibus at expedita maiores dolorum officiis culpa illo velit iure doloremque, facilis ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum corporis atque possimus aspernatur animi! Voluptatum sunt ab explicabo. Nobis fuga in, ex itaque temporibus delectus quis ducimus culpa architecto praesentium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perferendis ea dicta, assumenda laboriosam sunt earum tenetur excepturi nostrum adipisci iure repudiandae ad, corrupti officiis voluptatibus, deserunt exercitationem rem ut!</p>
+    <h2>subtitulo do exercicio</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iure iste neque, incidunt facere dolor accusamus nemo culpa quod voluptatibus voluptatum nostrum! Veritatis culpa maiores dolorum officiis quibusdam, a dolores?</p>
+
+</body>
+</html>
