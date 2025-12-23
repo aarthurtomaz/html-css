@@ -4,16 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>videos para assistir</title>
-<style>body {background-color: rgb(21, 141, 135);}</style>
+<style>
+    body {
+         background-color: rgb(21, 141, 135);
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        color: white;
+    }
+    a {
+        text-decoration: none;
+    }
+    main{
+        min-width: 300px;
+        max-width: 813px;
+        margin: auto;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: rgb(98 255 186 / 13%);
+        box-shadow: 2px 1px 18px 0px black;
+    }
+    main a{
+        margin: 2px;
+
+    }
+    .img-hover:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+    footer a:hover{
+        color: white;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+</style>
 </head>
 <body style="text-align: center;"> 
-  <h1>videos para aprimorar seu conhecimento</h1>
-      <a href="pag2 html.html" target="_blank" rel="target">
-      <img src="thumb-html.png" alt="Clique aqui" width="400px">
-      </a>
-      <a href="pag3.html" target="_blank" rel="target">
-      <img src="thumb-python (1).png" alt="Clique aqui" width="400px">
-      </a>
-
+  <h1><strong>Videos para aprimorar seu conhecimento</strong></h1>
+      <main>
+          <a href="pag2 html.html" target="_blank" rel="target">
+          <img src="thumb-html.png" alt="Clique aqui" width="400px" class="img-hover">
+          </a>
+          <a href="pag3.html" target="_blank" rel="target" >
+          <img src="thumb-python (1).png" alt="Clique aqui" width="400px"class="img-hover">
+          </a>
+      </main>
+      <footer>
+    <p style="color: white;">&copy; 2024 Vídeos Educativos. Criado por <a href="https://github.com/aarthurtomaz">Arthur Tomaz De Freitas</a>.</p>
+      </footer>
 </body>
 </html>

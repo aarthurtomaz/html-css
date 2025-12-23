@@ -4,19 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assista o trailer aqui</title>
-    <style>body {background-color: rgb(21, 141, 135);}</style>
+    <style>body {
+      background-color: rgb(21, 141, 135);
+      text-align: center;
+    }
+      h1 {
+         font-family: Arial, Helvetica, sans-serif;
+         font-style: italic;
+         color: white;
+      }
+      .video{
+      margin-bottom: 20px;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      margin: 0px;
+    }
+    .link{
+      margin-bottom: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 31%;
+    }
+    .img{
+        margin-top: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+    }
+    .link:hover{
+      color: rgb(255, 255, 255);
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+
+
+    </style>
 </head>
 <body>
-   <center> <h1><strong>CURSO PYTHON</strong></h1></center>
-<center>
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/S9uPNppGsGo?si=jsb-iZLW6qylTrxi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</center>
+    <header>
+       <h1><strong>CURSO PYTHON</strong></h1>
+    </header>
+   <main>
+      <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/S9uPNppGsGo?si=jsb-iZLW6qylTrxi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <a class="link" href="https://youtu.be/S9uPNppGsGo?si=2reENAESJ-OM17ih">veja o curso completo</a>
+      <a href="index.html">
+        <img class="img" src="voltar.png" alt="voltar.png" width="80px">
+      </a>
+   </main>
 
-<center><a href="https://youtu.be/S9uPNppGsGo?si=2reENAESJ-OM17ih">veja o curso completo</a></center>
-<center>
-<a href="index.html">
-  <img src="voltar.png" alt="voltar.png" width="80px">
-</a>
-</center>
 </body>
 </html>
