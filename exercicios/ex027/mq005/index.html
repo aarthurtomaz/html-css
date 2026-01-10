@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media-Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span class="material-symbols-outlined" onclick="clickMenu()">menu </span>
+        <nav id="menu">
             <ul>
-                <li><a href="">opção1</a></li>
-                <li><a href="">opção2</a></li>
-                <li><a href="">opção3</a></li>
-                <li><a href="">opção4</a></li>
-                <li><a href="">opção5</a></li>
+                <li onclick="alert('opção1')"><a href="">opção1</a></li>
+                <li onclick="alert('opção2')"><a href="">opção2</a></li>
+                <li onclick="alert('opção3')"><a href="">opção3</a></li>
+                <li onclick="alert('opção4')"><a href="">opção4</a></li>
+                <li onclick="alert('opção5')"><a href="">opção5</a></li>
             </ul> 
-        </menu>
+        </nav>
     </header>
     <main>
         <article>
@@ -38,5 +40,17 @@
     <footer>
 
     </footer>
+
+    <script>
+        function clickMenu(){
+             if(menu.style.display == 'block'){
+                menu.style.display = 'none';
+             } else{
+                menu.style.display = 'block';
+             }
+        }
+        function alert1(){`você clicou no ${Botao1}`}
+    </script>
+
 </body>
 </html>
