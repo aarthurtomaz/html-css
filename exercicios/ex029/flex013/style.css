@@ -22,18 +22,19 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-h1{
-    border: 1px dotted black;
+header > h1{
+   /* border: 1px dotted black;*/
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
 }
-nav{
-    border: 1px dotted black;
+header > nav{
+    /*border: 1px dotted black;*/
     
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
 }
-nav > a{
+header > nav > a{
     background-color: black;
     color: aliceblue;
     padding: 10px;
@@ -42,7 +43,7 @@ nav > a{
     text-decoration: none;
     text-align: center;
 }
-nav > a:hover{
+header > nav > a:hover{
     background-color: aliceblue;
     color: black;
     transition: background-color .4s;
