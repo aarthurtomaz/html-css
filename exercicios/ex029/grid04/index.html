@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout na pratica</title>
+    <style>
+        div.container{
+            border: 3px solid blue;
+            height: 250px;
+            display: grid;
+
+            /*grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;*/
+            grid-template: repeat(3, 100px) / repeat(4, 1fr);
+
+        }
+        div.item{
+            border: 3px solid red;
+        }
+        .caixa1{
+            background-color: red;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .caixa2{
+            background-color: beige;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .caixa3{
+            background-color: aquamarine;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa1">A</div>
+        <div class="caixa1">B</div>
+        <div class="caixa1">C</div>
+        <div class="caixa1">D</div>
+        <div class="caixa2">E</div>
+        <div class="caixa2">F</div>
+        <div class="caixa2">G</div>
+        <div class="caixa2">H</div>
+        <div class="caixa3">I</div>
+        <div class="caixa3">J</div>
+        <div class="caixa3">Q</div>
+        <div class="caixa3">L</div>
+    </div>
+</body>
+</html>
